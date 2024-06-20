@@ -41,7 +41,7 @@ To compile and run the `dict.cpp` program, you will need:
 
 The program can be run with various command-line arguments to perform different actions:
 
-1. **Count the number of words in the dictionary:**
+1. **Count the number of words in the default dictionary:**
     ```bash
     ./dict
     ```
@@ -50,15 +50,16 @@ The program can be run with various command-line arguments to perform different 
     ```bash
     ./dict -d another_dictionary.txt
     ```
+    - `another_dictionary.txt`: The name of the alternative dictionary file.
 
 3. **Print words with a given prefix:**
     ```bash
     ./dict -p prefix -n number
     ```
     - `prefix`: The prefix to search for.
-    - `number`: The maximum number of words to print.
+    - `number`: The maximum number of words to print. If omitted, all matching words are printed.
 
-4. **Replace occurrences of a word:**
+4. **Replace occurrences of a word in the dictionary:**
     ```bash
     ./dict -s word -r replacement
     ```
